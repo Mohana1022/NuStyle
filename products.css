@@ -521,3 +521,14 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+.container {
+  width: 100%;
+  max-width: 1200px; /* keeps desktop layout */
+  margin: 0 auto;
+  padding: 0 15px; /* adds spacing on mobile */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
