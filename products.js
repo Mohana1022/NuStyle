@@ -161,6 +161,6 @@ function renderSidebar() {
 
 
 let checkoutBtn = document.getElementById("checkout_btn")
-checkoutBtn.addEventListener("click",()=>{
-  location.href="Checkout.html"
+checkoutBtn.addEventListener("click", () => {
+  location.href = "checkout.html"
 })

@@ -1,41 +1,144 @@
-/* Mobile (≤768px) */
-@media only screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
+/* =========================
+   GLOBAL FORCE RESET
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+
+  nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 12px 16px !important;
+    background-color: black !important;
+    width: 100% !important;
   }
 
-  .product-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  #nav_one {
+    display: flex !important;
+    align-items: center !important;
   }
 
-  .checkout-form input,
-  .checkout-form button {
-    width: 100%;
-    font-size: 16px;
+  #nav_one h1 {
+    font-size: 20px !important;
+  }
+
+  /* Hide menu links on mobile (correct UX) */
+  #nav_two {
+    display: none !important;
+  }
+
+  #nav_three {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  #cart_quantity,
+  #cart_price {
+    font-size: 12px !important;
+  }
+
+  /* Slider */
+  #slider_container {
+    width: 100% !important;
+  }
+
+  #slider_container img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  /* Cards */
+  #second_page {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 16px !important;
+  }
+
+  /* Footer */
+  #info_container {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 20px !important;
+    text-align: center !important;
   }
 }
 
-/* Tablet (769px–1024px) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+/* =========================
+   TABLET (769px–1024px)
+========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 16px 32px !important;
+    background-color: black !important;
   }
 
-  nav ul {
-    justify-content: space-around;
+  #nav_two {
+    display: flex !important;
+    gap: 20px !important;
+  }
+
+  #second_page {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    padding: 24px !important;
+  }
+
+  #info_container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+    padding: 30px !important;
   }
 }
 
-/* Desktop (≥1025px) */
-@media only screen and (min-width: 1025px) {
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+/* =========================
+   DESKTOP (≥1025px)
+========================= */
+@media (min-width: 1025px) {
+
+  nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 20px 60px !important;
+    background-color: black !important;
+  }
+
+  #nav_two {
+    display: flex !important;
+    gap: 32px !important;
+  }
+
+  #second_page {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 30px !important;
+    padding: 40px !important;
+  }
+
+  #info_container {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 30px !important;
+    padding: 40px !important;
   }
 }
